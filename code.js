@@ -81,7 +81,7 @@ function testAPI() {
 }
 
 function group() {
-    FB.api('/798630133490975/',function(response){
+    FB.api('/798630133490975/feed/',function(response){
         var str = "";
         for(var i = 0; i < response.data.length; i++) {
             str = str + response.data[i];
