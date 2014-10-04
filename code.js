@@ -80,14 +80,7 @@ function testAPI() {
     });
 }
 
-function httpGet(theUrl)
-{
-    var xmlHttp = null;
-
-    xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false );
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
-}
-
-FB.api('/798630133490975/',function(response){console.log(response);});
+function group() {
+    FB.api('/798630133490975/',function(response){console.log(response);});
+};
+group();
