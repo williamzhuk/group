@@ -83,7 +83,7 @@ function testAPI() {
 function group(number) {
     var string = "/" + number + "/feed/";
     console.log("STRING = " + string);
-    FB.api("/798630133490975/feed/",function(response){
+    FB.api(string,function(response){
         var str = "";
         for(var i = 0; i < response.data.length; i++) {
             str = str +
