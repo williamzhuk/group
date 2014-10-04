@@ -89,5 +89,7 @@ function group() {
         }
         document.getElementById("270").innerHTML = str;
     });
-};
+}
+          
+          
 
