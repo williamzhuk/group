@@ -81,6 +81,6 @@ function testAPI() {
 }
 
 function group() {
-    FB.api('/798630133490975/',function(response){console.log(response);});
+    FB.api('/798630133490975/',function(response){document.getElementById("270").innerHTML = response;});
 };
 
