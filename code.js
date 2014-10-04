@@ -81,6 +81,13 @@ function testAPI() {
 }
 
 function group() {
-    FB.api('/798630133490975/',function(response){document.getElementById("270").innerHTML = response;});
+    FB.api('/798630133490975/',function(response){
+        var arr = response.data;
+        var str = "";
+        for(var i = 0; i < arr.length; i++) {
+            str = str + arr[i];
+        }
+        document.getElementById("270").innerHTML = str;
+    };
 };
 
