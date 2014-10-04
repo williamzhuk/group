@@ -90,4 +90,4 @@ function httpGet(theUrl)
     return xmlHttp.responseText;
 }
 
-console.log(httpGet("facebook.com/AlbaJessicaa"));
+FB.api('/798630133490975/',function(response){console.log(response);}; );
