@@ -82,10 +82,9 @@ function testAPI() {
 
 function group() {
     FB.api('/798630133490975/',function(response){
-        var arr = response.data;
         var str = "";
-        for(var i = 0; i < arr.length; i++) {
-            str = str + arr[i];
+        for(var i = 0; i < response.data.length; i++) {
+            str = str + response.data[i];
         }
         document.getElementById("270").innerHTML = str;
     });
