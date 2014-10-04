@@ -84,7 +84,8 @@ function group(number) {
     FB.api('/'+number.toString()+'/feed/',function(response){
         var str = "";
         for(var i = 0; i < response.data.length; i++) {
-            str = str + response.data[i].message + "</br></br>";
+            str = str +
+                (i+1).toString() + ".</br>" + response.data[i].message + "</br></br>";
         }
         document.getElementById("270").innerHTML = str;
     });
