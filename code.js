@@ -9,18 +9,15 @@ function statusChangeCallback(response) {
     if (response.status === 'connected') {
         // Logged into your app and Facebook.
         testAPI();
-        document.getElementById("login-state").innerHTML = "Logged into the app and Facebook";
     } else if (response.status === 'not_authorized') {
         // The person is logged into Facebook, but not your app.
         document.getElementById('status').innerHTML = 'Please log ' +
             'into this app.';
-        document.getElementById("login-state").innerHTML = "Logged into Facebook, but not the app";
     } else {
         // The person is not logged into Facebook, so we're not sure if
         // they are logged into this app or not.
         document.getElementById('status').innerHTML = 'Please log ' +
             'into Facebook.';
-        document.getElementById("login-state").innerHTML = "Not logged into Facebook, so not sure if logged into app or not";
     }
 }
 
@@ -92,6 +89,6 @@ function group(number) {
         document.getElementById("270").innerHTML = str;
     });
 }
-          
-          
+
+
 
