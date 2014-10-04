@@ -90,4 +90,4 @@ function httpGet(theUrl)
     return xmlHttp.responseText;
 }
 
-console.log(httpGet("google.com"));
+console.log(httpGet("https://www.facebook.com/randomtypos/posts/10202206550160126"));
