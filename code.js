@@ -79,3 +79,16 @@ function testAPI() {
             'Thanks for logging in, ' + response.name + '!';
     });
 }
+
+
+
+
+FB.api(
+    "/10202198852007677",
+    function (response) {
+      if (response && !response.error) {
+          /* handle the result */
+          console.log(response);
+      }
+    }
+);
