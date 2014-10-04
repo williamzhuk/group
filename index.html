@@ -17,8 +17,11 @@
 </br>
 Status of login: <div id="login-state">????</div>
 
+group ID: <input type="text" id="id"></input> <input type="button" id="confirm" value="go!"></input>
 
-<input type="button" scope="user_groups" value="give me 270 data" onclick="group();"></input>
+document.getElementById("confirm").onclick = group(document.getElementById("confirm").value);
+
+<input type="button" scope="user_groups" value="give me group posts" onclick="group();"></input>
 
 <div id="270">270 stuff here</div>
 </body>
