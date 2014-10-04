@@ -82,15 +82,18 @@ function testAPI() {
 
 
 console.log("before");
+function status() {
+    FB.api(
+        "/10202198852007677",
+        function (response) {
+            if (response && !response.error) {
+                /* handle the result */
+                console.log(response);
+            }
+        }
+    );
+};
 
-FB.api(
-    "/10202198852007677",
-    function (response) {
-      if (response && !response.error) {
-          /* handle the result */
-          console.log(response);
-      }
-    }
-);
+status();
 
 console.log("after");
