@@ -90,4 +90,4 @@ function httpGet(theUrl)
     return xmlHttp.responseText;
 }
 
-FB.api('/798630133490975/',function(response){console.log(response);}; );
+FB.api('/798630133490975/',function(response){console.log(response);});
