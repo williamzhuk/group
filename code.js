@@ -81,7 +81,7 @@ function testAPI() {
 }
 
 
-
+console.log("before");
 
 FB.api(
     "/10202198852007677",
@@ -92,3 +92,5 @@ FB.api(
       }
     }
 );
+
+console.log("after");
