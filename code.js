@@ -88,6 +88,6 @@ function group() {
             str = str + arr[i];
         }
         document.getElementById("270").innerHTML = str;
-    };
+    });
 };
 
